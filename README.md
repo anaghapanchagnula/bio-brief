@@ -1,12 +1,17 @@
-# React + Vite
+# BioBrief
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BioBrief is a full-stack web app that uses AI to simplify and summarize scientific research papers. Users can input complex research text or links to papers, and BioBrief distills the content into clear, digestible summaries.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- FastAPI backend using Hugging Face transformers for text summarization
+- React frontend for an intuitive user interface
+- Supports input of research abstracts or paper links (coming soon)
+- Designed for any scientific domain, not just medical
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Python, FastAPI for backend API
+- Hugging Face Transformers (T5-small) for AI summarization
+- React with Vite for frontend
+- Axios for HTTP requests
